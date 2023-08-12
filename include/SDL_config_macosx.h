@@ -165,8 +165,7 @@
 
 /* The MFI controller support requires ARC Objective C runtime */
 #if MAC_OS_X_VERSION_MIN_REQUIRED >= 1080 && !defined(__i386__)
-// This appears to require SDL3
-// #define SDL_JOYSTICK_MFI 1
+#define SDL_JOYSTICK_MFI 1
 #endif
 
 /* Enable the dummy sensor driver */
